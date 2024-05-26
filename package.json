@@ -1,0 +1,31 @@
+{
+  "name": "joplin-plugin-quick-web-link",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run dist && /Applications/Joplin.app/Contents/MacOS/Joplin --env dev",
+    "dist": "webpack --env joplin-plugin-config=buildMain && webpack --env joplin-plugin-config=buildExtraScripts && webpack --env joplin-plugin-config=createArchive",
+    "prepare": "npm run dist",
+    "updateVersion": "webpack --env joplin-plugin-config=updateVersion",
+    "update": "npm install -g generator-joplin && yo joplin --node-package-manager npm --update --force"
+  },
+  "license": "MIT",
+  "keywords": [
+    "joplin-plugin"
+  ],
+  "files": [
+    "publish"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "chalk": "^5.3.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.4.1",
+    "tar": "^7.1.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "@joplin/lib": "~2.9"
+  }
+}

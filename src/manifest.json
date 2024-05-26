@@ -1,0 +1,15 @@
+{
+	"manifest_version": 1,
+	"id": "uk.me.rga.QuickWebLink",
+	"app_min_version": "2.13",
+	"version": "1.0.0",
+	"name": "Quick Web Link",
+	"description": "Lets you grab the web link for a note quickly",
+	"author": "Ryan Adams",
+	"homepage_url": "",
+	"repository_url": "",
+	"keywords": [],
+	"categories": [],
+	"screenshots": [],
+	"icons": {}
+}
